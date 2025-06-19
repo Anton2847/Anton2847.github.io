@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NihTip - Titip Belanja Luar Negeri</title>
+  <style>
+    body { margin: 0; font-family: 'Segoe UI', sans-serif; background: #f5f0e6; color: #333; }
+    header {
+      background: url('images/header.png') no-repeat center center/cover;
+      padding: 150px 20px;
+      color: white;
+      text-align: center;
+      position: relative; 
+    }
+    header h1 { font-size: 32px; color: #d4ff4f; margin-bottom: 10px; }
+    header p { max-width: 600px; margin: auto; font-size: 16px; }
+    .cta-buttons { margin-top: 20px; }
+    .cta-buttons a {
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      margin: 5px;
+      display: inline-block;
+      font-weight: bold;
+    }
+    .primary-btn { background: #3478f6; color: white; }
+    .secondary-btn { background: #f2f2f2; color: #333; border: 1px solid #ccc; }
+
+    .section { padding: 40px 20px; text-align: center; }
+    .marketplace-logos img { height: 60px; margin: 10px; vertical-align: middle; }
+
+    .logo-container {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+    }
+    .features, .how-it-works, .testimonials{
+      display: grid;
+      gap: 20px;
+      justify-content: center;
+      max-width: 900px;
+      margin: auto;
+    }
+    .features { grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); }
+    .how-it-works { grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); }
+    .testimonials, .faq-grid { grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
+    .card { background: white; padding: 20px; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.05); }
+    .footer-cta {
+      background: #005fcb;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .card-icon {
+      display: block;
+      margin: 0 auto 10px;
+      width: 60px; 
+      height: auto;
+    }
+    .faq-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 2fr); 
+      gap: 20px;
+      justify-content: center;
+      max-width: 650px;
+      margin: auto;
+    }
+    .footer-cta h2 { margin-bottom: 10px; }
+    .footer-cta p { margin-bottom: 20px; }
+    .footer-cta a {
+      text-decoration: none;
+      background: white;
+      color: #005fcb;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+    footer {
+      background: #f5f5f5;
+      padding: 20px;
+      text-align: center;
+      font-size: 14px;
+    }
+    footer a { color: #333; margin: 0 10px; text-decoration: none; }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo-container">
+    <img src="images/NihTip-Logo.png" alt="Logo" width="100">
+  </div>
+  <h1>Titip Belanja Luar Negeri, Semudah Belanja Lokal</h1>
+  <p>NihTip bantu kamu belanja dari AliExpress, Amazon, eBay, hingga Uniqlo tanpa repot urus pembayaran & pengiriman internasional.</p>
+  <div class="cta-buttons">
+    <a href="http://bitly.com/98K8eH " target="_blank" class="primary-btn">Mulai Titip Sekarang</a>
+    <a href="https://shorturl.at/9VN8r" target="_blank" class="secondary-btn">Coba Hitung Biaya</a>
+  </div>
+</header>
+
+<section class="section">
+  <h2>Marketplace</h2>
+  <p>Kami siap bantu titip barang dari berbagai situs internasional terpercaya</p>
+  <div class="marketplace-logos">
+<a href="https://www.aliexpress.com" target="_blank">
+  <img src="images/aliexpress.png" alt="AliExpress">
+</a>
+<a href="https://www.amazon.com" target="_blank">
+  <img src="images/amazon.png" alt="Amazon">
+</a>
+<a href="https://www.ebay.com" target="_blank">
+  <img src="images/ebay.png" alt="eBay">
+</a>
+<a href="https://www.mercari.com" target="_blank">
+  <img src="images/mercari.png" alt="Mercari">
+</a>
+<a href="https://www.rakuten.com" target="_blank">
+  <img src="images/rakuten.png" alt="Rakuten">
+</a>
+<a href="https://www.etsy.com" target="_blank">
+  <img src="images/etsy.png" alt="Etsy">
+</a>
+<a href="https://www.taobao.com" target="_blank">
+  <img src="images/taobao.png" alt="Taobao">
+</a>
+<a href="https://www.banggood.com" target="_blank">
+  <img src="images/banggood.png" alt="Banggood">
+</a>
+<a href="https://www.dhgate.com" target="_blank">
+  <img src="images/dhgate.png" alt="DHGate">
+</a>
+<a href="https://www.uniqlo.com/jp/" target="_blank">
+  <img src="images/uniqlo.png" alt="Uniqlo">
+</a>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Why NihTip</h2>
+  <div class="features">
+    <div class="card">          
+      <img src="images/safe.png" alt="Aman" class="card-icon">
+      <strong>Aman & Terpercaya</strong><br>Sistem tracking & garansi</div>
+    <div class="card">          
+      <img src="images/transparan.png" alt="Transparan" class="card-icon">
+      <strong>Harga Transparan</strong><br>Tanpa biaya tersembunyi</div>
+    <div class="card">          
+      <img src="images/multimarket.png" alt="Multi-Marketplace" class="card-icon">
+      <strong>Multi-Marketplace</strong><br>Satu tempat untuk semua</div>
+    <div class="card">          
+      <img src="images/cepat.png" alt="Cepat" class="card-icon">
+      <strong>Cepat & Mudah</strong><br>Kirim link, bayar, selesai</div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>How It Works</h2>
+  <div class="how-it-works">
+    <div class="card">
+          <img src="images/wawawa.png" alt="Link" class="card-icon">
+          <strong>1. Kirim Link Barang</strong><br>Kirim link barang yang ingin Anda beli</div>
+    <div class="card">
+          <img src="images/calculator.png" alt="Estimasi" class="card-icon">
+          <strong>2. Terima Estimasi Harga</strong><br>Estimasi harga yang akurat</div>
+    <div class="card">
+          <img src="images/buy-icon.png" alt="Bayar" class="card-icon">
+          <strong>3. Bayar dan Tunggu Proses</strong><br>Kami beli dan urus semuanya</div>
+    <div class="card">
+          <img src="images/package.jpg" alt="Tiba" class="card-icon">
+          <strong>4. Barang Tiba di Rumahmu</strong><br>Dikirim ke alamat Anda dengan aman</div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Testimonials</h2>
+  <div class="testimonials">
+    <div class="card">
+          <img src="images/testi1.png" alt="Testi1" class="card-icon">
+          “Saya sangat puas dengan NihTip. Prosesnya sangat mudah dan cepat.”</div>
+    <div class="card">
+          <img src="images/testi2.png" alt="Testi2" class="card-icon">
+          “NihTip sangat membantu saya dalam berbelanja dari luar negeri.”</div>
+    <div class="card">
+          <img src="images/testi3.png" alt="Testi3" class="card-icon">
+          “Pelayanan NihTip sangat responsif dan membantu.”</div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>FAQ</h2>
+  <div class="faq-grid">
+    <div class="card"><strong>Barang apa saja yang bisa dititip?</strong><br>Semua barang dari marketplace internasional dapat dititip</div>
+    <div class="card"><strong>Apakah ada asuransi?</strong><br>Kami menyediakan asuransi untuk pengiriman</div>
+    <div class="card"><strong>Bagaimana sistem pembayarannya?</strong><br>Transfer bank atau kartu kredit</div>
+    <div class="card"><strong>Lama pengiriman berapa hari?</strong><br>Tergantung lokasi dan jenis pengiriman</div>
+  </div>
+</section>
+
+<section class="footer-cta" style="display: flex; flex-direction: column; align-items: center;">
+  <div style="
+    width: 200px; 
+    height: 50px; 
+    background: url('images/NihTip-Logo.png')  center / cover no-repeat;
+    margin-bottom: 20px;
+  "></div>
+  <h2>Yuk, Mulai Titip Barang Impianmu Sekarang!</h2>
+  <p>Belanja dari luar negeri nggak lagi bikin pusing. NihTip yang urus semuanya.</p>
+  <a href="https://short-link.me/152mc" target="_blank">Titip Sekarang</a>
+</section>
+
+<footer>
+  <p>
+    <a href="#">Tentang Kami</a> |
+    <a href="#">Kontak</a> |
+    <a href="#">FAQ</a> |
+    <a href="#">Syarat & Ketentuan</a>
+  </p>
+  <p>
+    <a href="#">
+      <img src="images/facebook.png" alt="Facebook" >
+    </a>
+    <a href="#">
+      <img src="images/instagram.png" alt="Instagram" >
+    </a>
+    <a href="#">
+      <img src="images/twitter.png" alt="Twitter" >
+    </a>
+    <a href="#">
+      <img src="images/whatsapp.png" alt="Whatsapp" >
+    </a>
+  </p>
+  <p>Copyright ©2025 NihTip. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
