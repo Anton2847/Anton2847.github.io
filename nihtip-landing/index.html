@@ -1,42 +1,90 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NihTip - Jasa Titip Belanja Luar Negeri Aman & Terpercaya</title>
-  <meta name="description" content="NihTip bantu kamu titip belanja dari Amazon, AliExpress, eBay, hingga Uniqlo tanpa ribet. Estimasi harga jelas, proses aman, dan layanan cepat.">
-  <meta name="keywords" content="jasa titip luar negeri, titip belanja, amazon indonesia, aliexpress indonesia, jasa titip terpercaya">
+  <meta name="description"
+    content="NihTip bantu kamu titip belanja dari Amazon, AliExpress, eBay, hingga Uniqlo tanpa ribet. Estimasi harga jelas, proses aman, dan layanan cepat.">
+  <meta name="keywords"
+    content="jasa titip luar negeri, titip belanja, amazon indonesia, aliexpress indonesia, jasa titip terpercaya">
   <meta name="author" content="NihTip">
   <link rel="canonical" href="https://nihtip.vercel.app/">
   <meta property="og:title" content="NihTip - Jasa Titip Belanja Luar Negeri Aman & Terpercaya">
-  <meta property="og:description" content="Belanja produk luar negeri semudah belanja lokal. NihTip bantu titip barang dari marketplace internasional dengan proses cepat dan transparan.">
+  <meta property="og:description"
+    content="Belanja produk luar negeri semudah belanja lokal. NihTip bantu titip barang dari marketplace internasional dengan proses cepat dan transparan.">
   <meta property="og:url" content="https://nihtip.vercel.app/">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
+  <meta property="og:image" content="https://nihtip.vercel.app/images/NihTip-Logo.png">
+  <meta property="og:image:alt" content="NihTip – Titip Belanja Luar Negeri Aman dan Mudah">
   <meta name="robots" content="index, follow">
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-9HJ3RQR5Z4"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-9HJ3RQR5Z4');
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "NihTip",
+  "url": "https://nihtip.vercel.app/",
+  "logo": "https://nihtip.vercel.app/images/NihTip-Logo.png",
+  "sameAs": [
+    "https://www.instagram.com/titipnihtip/",
+    "https://wa.me/6285393009744"
+  ],
+  "description": "Jasa titip belanja luar negeri yang aman dan terpercaya. Bantu belanja dari Amazon, AliExpress, eBay, Uniqlo Jepang, dan banyak lagi.",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+62-85393009744",
+    "contactType": "Customer Service",
+    "areaServed": "ID",
+    "availableLanguage": "id"
+  }
+}
 </script>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9HJ3RQR5Z4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-9HJ3RQR5Z4');
+  </script>
   <script defer src="https://vercel.com/analytics/script.js"></script>
 
   <style>
-    body { margin: 0; font-family: 'Segoe UI', sans-serif; background: #f5f0e6; color: #333; }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f5f0e6;
+      color: #333;
+    }
+
     header {
       background: url('images/header.png') no-repeat center center/cover;
       padding: 150px 20px;
       color: white;
       text-align: center;
-      position: relative; 
+      position: relative;
     }
-    header h1 { font-size: 32px; color: #d4ff4f; margin-bottom: 10px; }
-    header p { max-width: 600px; margin: auto; font-size: 16px; }
-    .cta-buttons { margin-top: 20px; }
+
+    header h1 {
+      font-size: 32px;
+      color: #d4ff4f;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      max-width: 600px;
+      margin: auto;
+      font-size: 16px;
+    }
+
+    .cta-buttons {
+      margin-top: 20px;
+    }
+
     .cta-buttons a {
       text-decoration: none;
       padding: 10px 20px;
@@ -45,50 +93,128 @@
       display: inline-block;
       font-weight: bold;
     }
-    .primary-btn { background: #3478f6; color: white; }
-    .secondary-btn { background: #f2f2f2; color: #333; border: 1px solid #ccc; }
 
-    .section { padding: 40px 20px; text-align: center; }
-    .marketplace-logos img { height: 60px; margin: 10px; vertical-align: middle; }
+    .primary-btn {
+      background: #3478f6;
+      color: white;
+    }
+
+    .secondary-btn {
+      background: #f2f2f2;
+      color: #333;
+      border: 1px solid #ccc;
+    }
+
+    .section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .marketplace-logos img {
+      height: 60px;
+      margin: 10px;
+      vertical-align: middle;
+    }
 
     .logo-container {
       position: absolute;
       top: 0px;
       left: 0px;
     }
-    .features, .how-it-works, .testimonials{
+
+    .features,
+    .how-it-works,
+    .testimonials {
       display: grid;
       gap: 20px;
       justify-content: center;
       max-width: 900px;
       margin: auto;
     }
-    .features { grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); }
-    .how-it-works { grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); }
-    .testimonials, .faq-grid { grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
-    .card { background: white; padding: 20px; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.05); }
+
+    .carousel-container {
+      overflow: hidden;
+      width: 100%;
+      margin-top: 20px;
+    }
+
+    .carousel-track {
+      display: flex;
+      gap: 20px;
+      animation: scrollCarousel 20s linear infinite;
+    }
+
+    .carousel-track img {
+      height: 60px;
+      vertical-align: middle;
+      transition: transform 0.3s;
+    }
+
+    .carousel-track img:hover {
+      transform: scale(1.1);
+    }
+
+    @keyframes scrollCarousel {
+      0% {
+        transform: translateX(0);
+      }
+
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+
+    .features {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
+    .how-it-works {
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    }
+
+    .testimonials,
+    .faq-grid {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    }
+
     .footer-cta {
       background: #005fcb;
       color: white;
       padding: 40px 20px;
       text-align: center;
     }
+
     .card-icon {
       display: block;
       margin: 0 auto 10px;
-      width: 60px; 
+      width: 60px;
       height: auto;
     }
+
     .faq-grid {
       display: grid;
-      grid-template-columns: repeat(2, 2fr); 
+      grid-template-columns: repeat(2, 2fr);
       gap: 20px;
       justify-content: center;
       max-width: 650px;
       margin: auto;
     }
-    .footer-cta h2 { margin-bottom: 10px; }
-    .footer-cta p { margin-bottom: 20px; }
+
+    .footer-cta h2 {
+      margin-bottom: 10px;
+    }
+
+    .footer-cta p {
+      margin-bottom: 20px;
+    }
+
     .footer-cta a {
       text-decoration: none;
       background: white;
@@ -97,163 +223,237 @@
       border-radius: 8px;
       font-weight: bold;
     }
+
     footer {
       background: #f5f5f5;
       padding: 20px;
       text-align: center;
       font-size: 14px;
     }
-    footer a { color: #333; margin: 0 10px; text-decoration: none; }
+
+    footer a {
+      color: #333;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
   </style>
 </head>
 
 <body>
 
-<header>
-  <div class="logo-container">
-    <img src="images/NihTip-Logo.png" alt="Logo" width="100">
-  </div>
-  <h1>Titip Belanja Luar Negeri, Semudah Belanja Lokal</h1>
-  <p>NihTip bantu kamu belanja dari AliExpress, Amazon, eBay, hingga Uniqlo tanpa repot urus pembayaran & pengiriman internasional.</p>
-  <div class="cta-buttons">
-    <a href="http://wa.me/6285393009744 " target="_blank" class="primary-btn">Mulai Titip Sekarang</a>
-    <a href="https://wise.com/gb/currency-converter/usd-to-idr-rate?amount=100" target="_blank" class="secondary-btn">Coba Hitung Biaya</a>
-  </div>
-</header>
+  <header>
+    <div class="logo-container">
+      <img src="images/NihTip-Logo.png" alt="Logo" width="100">
+    </div>
+    <h1>Titip Belanja Luar Negeri, Semudah Belanja Lokal</h1>
+    <p>NihTip bantu kamu belanja dari AliExpress, Amazon, eBay, hingga Uniqlo tanpa repot urus pembayaran & pengiriman
+      internasional.</p>
+    <div class="cta-buttons">
+      <a href="http://wa.me/6285393009744 " target="_blank" class="primary-btn">Mulai Titip Sekarang</a>
+      <a href="https://wise.com/gb/currency-converter/usd-to-idr-rate?amount=100" target="_blank"
+        class="secondary-btn">Coba Hitung Biaya</a>
+    </div>
+  </header>
 
-<section class="section">
-  <h2>Marketplace</h2>
-  <p>Kami siap bantu titip barang dari berbagai situs internasional terpercaya</p>
-  <div class="marketplace-logos">
-<a href="https://www.aliexpress.com" target="_blank">
-  <img src="images/aliexpress.png" alt="AliExpress">
-</a>
-<a href="https://www.amazon.com" target="_blank">
-  <img src="images/amazon.png" alt="Amazon">
-</a>
-<a href="https://www.ebay.com" target="_blank">
-  <img src="images/ebay.png" alt="eBay">
-</a>
-<a href="https://www.mercari.com" target="_blank">
-  <img src="images/mercari.png" alt="Mercari">
-</a>
-<a href="https://www.rakuten.com" target="_blank">
-  <img src="images/rakuten.png" alt="Rakuten">
-</a>
-<a href="https://www.etsy.com" target="_blank">
-  <img src="images/etsy.png" alt="Etsy">
-</a>
-<a href="https://www.taobao.com" target="_blank">
-  <img src="images/taobao.png" alt="Taobao">
-</a>
-<a href="https://www.banggood.com" target="_blank">
-  <img src="images/banggood.png" alt="Banggood">
-</a>
-<a href="https://www.dhgate.com" target="_blank">
-  <img src="images/dhgate.png" alt="DHGate">
-</a>
-<a href="https://www.uniqlo.com/jp/" target="_blank">
-  <img src="images/uniqlo.png" alt="Uniqlo">
-</a>
-  </div>
-</section>
+  <section class="section">
+    <h2>Marketplace</h2>
+    <p>Kami siap bantu titip barang dari berbagai situs internasional terpercaya</p>
+    <div class="carousel-container">
+      <div class="carousel-track">
+        <a href="https://www.aliexpress.com" target="_blank"><img src="images/aliexpress.png" alt="AliExpress"></a>
+        <a href="https://www.amazon.com" target="_blank"><img src="images/amazon.png" alt="Amazon"></a>
+        <a href="https://www.ebay.com" target="_blank"><img src="images/ebay.png" alt="eBay"></a>
+        <a href="https://www.mercari.com" target="_blank"><img src="images/mercari.png" alt="Mercari"></a>
+        <a href="https://www.rakuten.com" target="_blank"><img src="images/rakuten.png" alt="Rakuten"></a>
+        <a href="https://www.etsy.com" target="_blank"><img src="images/etsy.png" alt="Etsy"></a>
+        <a href="https://www.taobao.com" target="_blank"><img src="images/taobao.png" alt="Taobao"></a>
+        <a href="https://www.banggood.com" target="_blank"><img src="images/banggood.png" alt="Banggood"></a>
+        <a href="https://www.dhgate.com" target="_blank"><img src="images/dhgate.png" alt="DHGate"></a>
+        <a href="https://www.uniqlo.com/jp/" target="_blank"><img src="images/uniqlo.png" alt="Uniqlo"></a>
 
-<section class="section">
-  <h2>Why NihTip</h2>
-  <div class="features">
-    <div class="card">          
-      <img src="images/safe.png" alt="Aman" class="card-icon">
-      <strong>Aman & Terpercaya</strong><br>Sistem tracking & garansi</div>
-    <div class="card">          
-      <img src="images/transparan.png" alt="Transparan" class="card-icon">
-      <strong>Harga Transparan</strong><br>Tanpa biaya tersembunyi</div>
-    <div class="card">          
-      <img src="images/multimarket.png" alt="Multi-Marketplace" class="card-icon">
-      <strong>Multi-Marketplace</strong><br>Satu tempat untuk semua</div>
-    <div class="card">          
-      <img src="images/cepat.png" alt="Cepat" class="card-icon">
-      <strong>Cepat & Mudah</strong><br>Kirim link, bayar, selesai</div>
-  </div>
-</section>
+        <a href="https://www.aliexpress.com" target="_blank"><img src="images/aliexpress.png" alt="AliExpress"></a>
+        <a href="https://www.amazon.com" target="_blank"><img src="images/amazon.png" alt="Amazon"></a>
+        <a href="https://www.ebay.com" target="_blank"><img src="images/ebay.png" alt="eBay"></a>
+        <a href="https://www.mercari.com" target="_blank"><img src="images/mercari.png" alt="Mercari"></a>
+        <a href="https://www.rakuten.com" target="_blank"><img src="images/rakuten.png" alt="Rakuten"></a>
+        <a href="https://www.etsy.com" target="_blank"><img src="images/etsy.png" alt="Etsy"></a>
+        <a href="https://www.taobao.com" target="_blank"><img src="images/taobao.png" alt="Taobao"></a>
+        <a href="https://www.banggood.com" target="_blank"><img src="images/banggood.png" alt="Banggood"></a>
+        <a href="https://www.dhgate.com" target="_blank"><img src="images/dhgate.png" alt="DHGate"></a>
+        <a href="https://www.uniqlo.com/jp/" target="_blank"><img src="images/uniqlo.png" alt="Uniqlo"></a>
+      </div>
+    </div>
+  </section>
 
-<section class="section">
-  <h2>How It Works</h2>
-  <div class="how-it-works">
-    <div class="card">
-          <img src="images/wawawa.png" alt="Link" class="card-icon">
-          <strong>1. Kirim Link Barang</strong><br>Kirim link barang yang ingin Anda beli</div>
-    <div class="card">
-          <img src="images/calculator.png" alt="Estimasi" class="card-icon">
-          <strong>2. Terima Estimasi Harga</strong><br>Estimasi harga yang akurat</div>
-    <div class="card">
-          <img src="images/buy-icon.png" alt="Bayar" class="card-icon">
-          <strong>3. Bayar dan Tunggu Proses</strong><br>Kami beli dan urus semuanya</div>
-    <div class="card">
-          <img src="images/package.jpg" alt="Tiba" class="card-icon">
-          <strong>4. Barang Tiba di Rumahmu</strong><br>Dikirim ke alamat Anda dengan aman</div>
-  </div>
-</section>
+  <section class="section" id="sneakpeek">
+    <h2>Cuplikan Produk</h2>
+    <div style="
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 20px; 
+    margin-top: 20px;">
+      <div
+        style="border:1px solid #ccc; border-radius:8px; padding:10px; width:250px; text-align:center; background:#fff;">
+        <a href="https://www.mercari.com/us/item/m69507284764/?sv=lg" target="_blank"
+          style="text-decoration: none; color: inherit;">
+          <img src="https://u-mercari-images.mercdn.net/photos/m69507284764_1.jpg?1752920416"
+            alt="Bandai HG Mobile Suit Gundam GQuuuuuuux 5-Piece Gunpla Set" width="200" style="border-radius:8px;">
+          <h4 style="margin:10px 0;">Bandai HG Mobile Suit Gundam GQuuuuuuux 5-Piece Gunpla Set</h4>
+          <p style="color:green; font-weight:bold;">$185.00</p>
+        </a>
+      </div>
 
-<section class="section">
-  <h2>Testimonials</h2>
-  <div class="testimonials">
-    <div class="card">
-          <img src="images/testi1.png" alt="Testi1" class="card-icon">
-          “Saya sangat puas dengan NihTip. Prosesnya sangat mudah dan cepat.”</div>
-    <div class="card">
-          <img src="images/testi2.png" alt="Testi2" class="card-icon">
-          “NihTip sangat membantu saya dalam berbelanja dari luar negeri.”</div>
-    <div class="card">
-          <img src="images/testi3.png" alt="Testi3" class="card-icon">
-          “Pelayanan NihTip sangat responsif dan membantu.”</div>
-  </div>
-</section>
+      <div
+        style="border:1px solid #ccc; border-radius:8px; padding:10px; width:250px; text-align:center; background:#fff;">
+        <a href="https://www.mercari.com/us/item/m27025429643/" target="_blank"
+          style="text-decoration: none; color: inherit;">
+          <img src="https://u-mercari-images.mercdn.net/photos/m27025429643_1.jpg?1750377173"
+            alt="HG Gquuuuuux GQX Gundam" width="200" style="border-radius:8px;">
+          <h4 style="margin:10px 0;">HG Gquuuuuux GQX Gundam</h4>
+          <p style="color:green; font-weight:bold;">$29.00</p>
+        </a>
+      </div>
 
-<section class="section">
-  <h2>FAQ</h2>
-  <div class="faq-grid">
-    <div class="card"><strong>Barang apa saja yang bisa dititip?</strong><br>Semua barang dari marketplace internasional dapat dititip</div>
-    <div class="card"><strong>Apakah ada asuransi?</strong><br>Kami menyediakan asuransi untuk pengiriman</div>
-    <div class="card"><strong>Bagaimana sistem pembayarannya?</strong><br>Transfer bank atau kartu kredit</div>
-    <div class="card"><strong>Lama pengiriman berapa hari?</strong><br>Tergantung lokasi dan jenis pengiriman</div>
-  </div>
-</section>
+      <div
+        style="border:1px solid #ccc; border-radius:8px; padding:10px; width:250px; text-align:center; background:#fff;">
+        <a href="https://www.mercari.com/us/item/m34849687716/" target="_blank"
+          style="text-decoration: none; color: inherit;">
+          <img src="https://u-mercari-images.mercdn.net/photos/m34849687716_1.jpg?1739377504"
+            alt="HG Aerial Permet Score Six and HG Gundnode bundle" width="200" style="border-radius:8px;">
+          <h4 style="margin:10px 0;">HG Aerial Permet Score Six and HG Gundnode bundle</h4>
+          <p style="color:green; font-weight:bold;">$105.00</p>
+        </a>
+      </div>
 
-<section class="footer-cta" style="display: flex; flex-direction: column; align-items: center;">
-  <div style="
+      <div
+        style="border:1px solid #ccc; border-radius:8px; padding:10px; width:250px; text-align:center; background:#fff;">
+        <a href="https://www.mercari.com/us/item/m57501853097/" target="_blank"
+          style="text-decoration: none; color: inherit;">
+          <img src="https://u-mercari-images.mercdn.net/photos/m57501853097_1.jpg?1749610525"
+            alt="Gundam MGEX 1/100 Unicorn Gundam Ver.Ka Model kit BANDAI JAPAN" width="200" style="border-radius:8px;">
+          <h4 style="margin:10px 0;">Gundam MGEX 1/100 Unicorn Gundam Ver.Ka Model kit BANDAI JAPAN</h4>
+          <p style="color:green; font-weight:bold;">$249.00</p>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="section">
+    <h2>Why NihTip</h2>
+    <div class="features">
+      <div class="card">
+        <img src="images/safe.png" alt="Aman" class="card-icon">
+        <strong>Aman & Terpercaya</strong><br>Sistem tracking & garansi
+      </div>
+      <div class="card">
+        <img src="images/transparan.png" alt="Transparan" class="card-icon">
+        <strong>Harga Transparan</strong><br>Tanpa biaya tersembunyi
+      </div>
+      <div class="card">
+        <img src="images/multimarket.png" alt="Multi-Marketplace" class="card-icon">
+        <strong>Multi-Marketplace</strong><br>Satu tempat untuk semua
+      </div>
+      <div class="card">
+        <img src="images/cepat.png" alt="Cepat" class="card-icon">
+        <strong>Cepat & Mudah</strong><br>Kirim link, bayar, selesai
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="snk">
+    <h2>How It Works</h2>
+    <div class="how-it-works">
+      <div class="card">
+        <img src="images/wawawa.png" alt="Link" class="card-icon">
+        <strong>1. Kirim Link Barang</strong><br>Kirim link barang yang ingin Anda beli
+      </div>
+      <div class="card">
+        <img src="images/calculator.png" alt="Estimasi" class="card-icon">
+        <strong>2. Terima Estimasi Harga</strong><br>Estimasi harga yang akurat
+      </div>
+      <div class="card">
+        <img src="images/buy-icon.png" alt="Bayar" class="card-icon">
+        <strong>3. Bayar dan Tunggu Proses</strong><br>Kami beli dan urus semuanya
+      </div>
+      <div class="card">
+        <img src="images/package.jpg" alt="Tiba" class="card-icon">
+        <strong>4. Barang Tiba di Rumahmu</strong><br>Dikirim ke alamat Anda dengan aman
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Testimonials</h2>
+    <div class="testimonials">
+      <div class="card">
+        <img src="images/testi1.png" alt="Testi1" class="card-icon">
+        “Saya sangat puas dengan NihTip. Prosesnya sangat mudah dan cepat.”
+      </div>
+      <div class="card">
+        <img src="images/testi2.png" alt="Testi2" class="card-icon">
+        “NihTip sangat membantu saya dalam berbelanja dari luar negeri.”
+      </div>
+      <div class="card">
+        <img src="images/testi3.png" alt="Testi3" class="card-icon">
+        “Pelayanan NihTip sangat responsif dan membantu.”
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="faq">
+    <h2>FAQ</h2>
+    <div class="faq-grid">
+      <div class="card"><strong>Barang apa saja yang bisa dititip?</strong><br>Semua barang dari marketplace
+        internasional dapat dititip</div>
+      <div class="card"><strong>Apakah ada asuransi?</strong><br>Kami menyediakan asuransi untuk pengiriman</div>
+      <div class="card"><strong>Bagaimana sistem pembayarannya?</strong><br>Transfer bank atau kartu kredit</div>
+      <div class="card"><strong>Lama pengiriman berapa hari?</strong><br>Tergantung lokasi dan jenis pengiriman</div>
+    </div>
+  </section>
+
+  <section class="footer-cta" style="display: flex; flex-direction: column; align-items: center;">
+    <div style="
     width: 200px; 
     height: 50px; 
     background: url('images/NihTip-Logo.png')  center / cover no-repeat;
     margin-bottom: 20px;
   "></div>
-  <h2>Yuk, Mulai Titip Barang Impianmu Sekarang!</h2>
-  <p>Belanja dari luar negeri nggak lagi bikin pusing. NihTip yang urus semuanya.</p>
-  <a href="http://wa.me/6285393009744" target="_blank">Titip Sekarang</a>
-</section>
+    <h2>Yuk, Mulai Titip Barang Impianmu Sekarang!</h2>
+    <p>Belanja dari luar negeri nggak lagi bikin pusing. NihTip yang urus semuanya.</p>
+    <a href="http://wa.me/6285393009744" target="_blank">Titip Sekarang</a>
+  </section>
 
-<footer>
-  <p>
-    <a href="#">Tentang Kami</a> |
-    <a href="#">Kontak</a> |
-    <a href="#">FAQ</a> |
-    <a href="#">Syarat & Ketentuan</a>
-  </p>
-  <p>
-    <a href="#">
-      <img src="images/facebook.png" alt="Facebook" >
-    </a>
-    <a href="https://www.instagram.com/titipnihtip/" target="_blank">
-      <img src="images/instagram.png" alt="Instagram" >
-    </a>
-    <a href="#">
-      <img src="images/twitter.png" alt="Twitter" >
-    </a>
-    <a href="http://wa.me/6285393009744" target="_blank">
-      <img src="images/whatsapp.png" alt="Whatsapp" >
-    </a>
-  </p>
-  <p>Copyright ©2025 NihTip. All rights reserved.</p>
-</footer>
+  <footer>
+    <p>
+      <a href="#">Tentang Kami</a> |
+      <a href="http://wa.me/6285393009744 " target="_blank">Kontak</a> |
+      <a href="#faq">FAQ</a> |
+      <a href="#snk">Syarat & Ketentuan</a>
+    </p>
+    <p>
+      <a href="#">
+        <img src="images/facebook.png" alt="Facebook">
+      </a>
+      <a href="https://www.instagram.com/titipnihtip/" target="_blank">
+        <img src="images/instagram.png" alt="Instagram">
+      </a>
+      <a href="#">
+        <img src="images/twitter.png" alt="Twitter">
+      </a>
+      <a href="http://wa.me/6285393009744" target="_blank">
+        <img src="images/whatsapp.png" alt="Whatsapp">
+      </a>
+    </p>
+    <p>Copyright ©2025 NihTip. All rights reserved.</p>
+  </footer>
 
 </body>
+
 </html>
