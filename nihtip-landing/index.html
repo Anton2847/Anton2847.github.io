@@ -418,17 +418,62 @@
     </div>
   </section>
 
-  <section class="footer-cta" style="display: flex; flex-direction: column; align-items: center;">
-    <div style="
+<section class="footer-cta" style="display: flex; flex-direction: column; align-items: center;">
+  <div style="
     width: 200px; 
     height: 50px; 
-    background: url('images/NihTip-Logo.png')  center / cover no-repeat;
+    background: url('images/NihTip-Logo.png') center / cover no-repeat;
     margin-bottom: 20px;
   "></div>
-    <h2>Yuk, Mulai Titip Barang Impianmu Sekarang!</h2>
-    <p>Belanja dari luar negeri nggak lagi bikin pusing. NihTip yang urus semuanya.</p>
-    <a href="http://wa.me/6285393009744" target="_blank">Titip Sekarang</a>
-  </section>
+
+  <h2>Yuk, Mulai Titip Barang Impianmu Sekarang!</h2>
+  <p>Belanja dari luar negeri nggak lagi bikin pusing. NihTip yang urus semuanya.</p>
+
+<form onsubmit="sendToWhatsApp(event)" style="width: 100%; max-width: 400px; text-align: center;">
+  <input type="text" id="name" placeholder="Nama Kamu" required 
+         style="padding: 10px; width: 90%; margin: 10px; border-radius: 6px; border: 1px solid #ccc;">
+  
+  <input type="url" id="link" placeholder="Link Barang (contoh: https://mercari.com/...)" required 
+         style="padding: 10px; width: 90%; margin: 10px; border-radius: 6px; border: 1px solid #ccc;">
+  
+  <p id="error" style="color:rgb(0, 0, 0); font-size:14px;"></p>
+
+  <button type="submit" style="padding: 12px 24px; border-radius: 8px; background: white; color: #005fcb; font-weight: bold; cursor:pointer;">
+    Kirim via WhatsApp
+  </button>
+</form>
+
+<script>
+  function sendToWhatsApp(event) {
+    event.preventDefault();
+    const name = document.getElementById("name").value.trim();
+    const link = document.getElementById("link").value.trim();
+    const errorMsg = document.getElementById("error");
+
+    const urlPattern = /^https?:\/\/.+/i;
+
+    if (!urlPattern.test(link)) {
+      errorMsg.textContent = "Link tidak valid. Harus diawali http:// atau https://";
+      return;
+    }
+
+    const allowedDomains = ["mercari.com", "amazon.com", "aliexpress.com", "rakuten.com", "etsy.com", "taobao.com", "banggood.com", "dhgate.com", "uniqlo.com", "ebay.com"];
+    const linkHost = new URL(link).hostname;
+
+    const isAllowed = allowedDomains.some(domain => linkHost.includes(domain));
+
+    if (!isAllowed) {
+      errorMsg.textContent = "Link harus dari marketplace yang tertera di atas";
+      return;
+    }
+
+    errorMsg.textContent = "";
+    const message = `Halo NihTip, saya ${name} mau pesan barang ini: ${link}`;
+    const encodedMsg = encodeURIComponent(message);
+    const waUrl = `https://wa.me/6285393009744?text=${encodedMsg}`;
+    window.open(waUrl, "_blank");
+  }
+</script>
 
   <footer>
     <p>
